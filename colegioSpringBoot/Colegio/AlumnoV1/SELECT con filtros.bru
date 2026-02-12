@@ -1,0 +1,24 @@
+meta {
+  name: SELECT con filtros
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/v1/alumnos?id&nombre=Elias&apellidos&famNumerosa&activo
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 
+  nombre: Elias
+  apellidos: 
+  famNumerosa: 
+  activo: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

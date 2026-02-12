@@ -1,0 +1,26 @@
+meta {
+  name: insertar
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/v1/asignaturas
+  body: json
+  auth: inherit
+}
+
+body:json {
+   {
+    "id": 67,
+    "nombre": "David Mori",
+    "curso": 1,
+    "tasa": 9.0,
+    "activo": 1
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

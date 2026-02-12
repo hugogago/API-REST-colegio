@@ -1,0 +1,16 @@
+meta {
+  name: Obtener todoas las asignaturas
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:8080/v1/asignaturas
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

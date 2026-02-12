@@ -1,0 +1,27 @@
+meta {
+  name: Actualizar Alumno
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/v2/alumnos/33
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 33,
+    "nombre": "Fernando",
+    "apellido": "Alonso",
+    "idMunicipio": 23,
+    "famNumerosa": 0,
+    "activo": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

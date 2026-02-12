@@ -1,0 +1,29 @@
+meta {
+  name: InsertarAlumno
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/v1/alumnos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 33,
+    "nombre": "Fernando",
+    "apellidos": "Alonso",
+    "municipio": {
+      "idMunicipio": 99
+    },
+    "famNumerosa": 0,
+    "activo": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

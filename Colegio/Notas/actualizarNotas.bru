@@ -1,0 +1,28 @@
+meta {
+  name: actualizarNotas
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/v1/notas/42
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 42,
+    "nota": "3.0", 
+    "idAsignatura": 7,
+    "nombreAsignatura": "david",
+    "idAlumno": 3,
+    "nombreAlumno": "Yola",
+    "fecha": "2026-01-16"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

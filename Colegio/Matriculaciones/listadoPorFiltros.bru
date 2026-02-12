@@ -1,0 +1,27 @@
+meta {
+  name: listadoPorFiltros
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/v1/matriculaciones/buscar?id=3&idAsignatura=1&nombreAsignatura=23&idAlumno=2&nombreAlumno=Esteban &fecha=2025-12-07&activo=1&tasa=9.0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 3
+  idAsignatura: 1
+  nombreAsignatura: 23
+  idAlumno: 2
+  nombreAlumno: Esteban 
+  fecha: 2025-12-07
+  activo: 1
+  tasa: 9.0
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

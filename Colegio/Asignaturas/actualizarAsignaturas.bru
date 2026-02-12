@@ -1,0 +1,26 @@
+meta {
+  name: actualizarAsignaturas
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8080/v1/asignaturas/56
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": 56,
+      "nombre": "David",
+      "curso": 11,
+      "tasa": 2.0,
+     "activo": 0
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

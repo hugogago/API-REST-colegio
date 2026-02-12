@@ -1,0 +1,28 @@
+meta {
+  name: insertar
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/v1/notas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  
+    "nota": "0.0",
+    "idAsignatura": 6,
+    "nombreAsignatura": "23",
+    "idAlumno": 3,
+    "nombreAlumno": "Esteban ",
+    "fecha": "2026-01-15"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

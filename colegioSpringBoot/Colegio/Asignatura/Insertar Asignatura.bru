@@ -1,0 +1,26 @@
+meta {
+  name: Insertar Asignatura
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/v1/asignaturas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 101,
+    "nombre": "Programación Web",
+    "curso": 2,
+    "tasa": 150.50,
+    "activo": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
